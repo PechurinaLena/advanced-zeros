@@ -8,13 +8,12 @@ module.exports = function getZerosCount(number, base) {
    Дано целое число N от 1 до 10^7 и номер base от 2 до 256.
    необходимо посчитать количество нулей в конце числа, которое получается путем высиления факториала числа-N в base-системе счисления
    */
-  let counter = 0;
+
+  let Zeros = 0;
 
   for (i = 5; number / i >= 1; i *= 5)
-    counter += Math.floor(number / i);
-  return counter;
-
-
+    Zeros += Math.floor(number / i);
+  return Zeros;
 
 
 }
